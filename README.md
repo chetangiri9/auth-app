@@ -12,7 +12,11 @@
 
 ## Steps for starting the applications
 
-Open up two separate terminal sessions for the frontend app and backend server
+Open up two separate terminal sessions for the frontend app and backend server.
+
+Also add your IPv4 address here to connect to the server, leave the port at 9000 itself
+    - [Login](simpleApp/Containers/Login/index.js#L35)
+    - [SignUp](simpleApp/Containers/SignUp/index.js#L47)
 
 ### Backend server
 - cd server
@@ -29,7 +33,4 @@ Open up two separate terminal sessions for the frontend app and backend server
     - npm run ios
 
 - For android
-    - add your IPv4 address here to connect to the server, leave the port at 9000 itself
-        - [Login](simpleApp/Containers/Login/index.js#L35)
-        - [SignUp](simpleApp/Containers/SignUp/index.js#L47)
     - npm run android
