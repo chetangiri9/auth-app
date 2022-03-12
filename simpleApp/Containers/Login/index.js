@@ -30,13 +30,13 @@ const Login = ({navigation}) => {
       alert('Please fill Password');
       return;
     }
-
+    // change to your IPv4 address
     axios
-      .post('http://localhost:9000/signin', {
+      .post('http://192.168.1.6:9000/signin', {
         username: username,
         password: userPassword,
       })
-      .then(async response => {
+      .then(response => {
         console.log(response.data);
 
         if (response.data) {
@@ -64,7 +64,7 @@ const Login = ({navigation}) => {
               <TextInput
                 style={styles.inputStyle}
                 onChangeText={u => setUserName(u)}
-                placeholder="Enter username" //dummy@abc.com
+                placeholder="Enter username"
                 placeholderTextColor="#8b9cb5"
                 autoCapitalize="none"
                 keyboardType="email-address"
@@ -80,7 +80,7 @@ const Login = ({navigation}) => {
               <TextInput
                 style={styles.inputStyle}
                 onChangeText={UserPassword => setUserPassword(UserPassword)}
-                placeholder="Enter Password" //12345
+                placeholder="Enter Password"
                 placeholderTextColor="#8b9cb5"
                 keyboardType="default"
                 ref={passwordInputRef}

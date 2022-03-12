@@ -9,7 +9,7 @@ const Dashboard = ({route, navigation}) => {
         style={styles.buttonStyle}
         activeOpacity={0.5}
         onPress={() => navigation.replace('LoginScreen')}>
-        <Text style={styles.buttonTextStyle}>Return to Login</Text>
+        <Text style={styles.buttonTextStyle}>Logout</Text>
       </TouchableOpacity>
     </View>
   );

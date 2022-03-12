@@ -42,9 +42,9 @@ const SignUp = ({navigation}) => {
       alert('Please fill Phone Number');
       return;
     }
-
+    // change to your IPv4 address
     axios
-      .post('http://localhost:9000/signup', {
+      .post('http://192.168.1.6:9000/signup', {
         username,
         password,
         full_name: name,
@@ -53,7 +53,6 @@ const SignUp = ({navigation}) => {
       })
       .then(response => {
         console.log(response);
-        // If server response message same as Data Matched
         if (response) {
           navigation.replace('SuccessScreen');
         } else {
